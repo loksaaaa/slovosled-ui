@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-protected',
+  standalone: true,
   templateUrl: './protected.component.html',
   styleUrls: ['./protected.component.css']
 })

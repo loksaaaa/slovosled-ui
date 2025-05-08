@@ -9,10 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { AuthInterceptor } from './auth.interceptor';
 
 @NgModule({
-  declarations: [
-    AppComponent,         // <-- tu
-    LoginComponent,
-    ProtectedComponent
+  declarations: [         // <-- tu
   ],
   imports: [
     BrowserModule,
@@ -28,6 +25,6 @@ import { AuthInterceptor } from './auth.interceptor';
       multi: true
     }
   ],
-  bootstrap: [AppComponent]
+  bootstrap: []
 })
 export class AppModule { }
