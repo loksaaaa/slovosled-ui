@@ -26,4 +26,9 @@ export class AuthService {
   isLoggedIn(): boolean {
     return !!localStorage.getItem('jwt');
   }
+
+    // ← pridávame túto metódu:
+    getToken(): string | null {
+      return localStorage.getItem('jwt');
+    }
 }
