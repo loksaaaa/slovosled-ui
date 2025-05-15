@@ -58,15 +58,15 @@
           "serve": {
             "builder": "@angular-devkit/build-angular:dev-server",
             "options": {
-              "browserTarget": "slovosled-ui:build:development",
+              "buildTarget": "slovosled-ui:build:development",
               "proxyConfig": "proxy.conf.json"
            },
            "configurations": {
               "production": {
-                "browserTarget": "slovosled-ui:build:production"
+                "buildTarget": "slovosled-ui:build:production"
               },
               "development": {
-                "browserTarget": "slovosled-ui:build:development"
+                "buildTarget": "slovosled-ui:build:development"
               }
             },
             "defaultConfiguration": "development"
@@ -97,5 +97,6 @@
         }
       }
     }
-  },
+  }
+}
 
